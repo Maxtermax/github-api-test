@@ -50,9 +50,7 @@ export default class Content extends React.Component {
     if(this.props.details){
       return (
         <div className="wrap-details">
-          <span className="wrap-github-link">
-            <a href={"https://github.com/"+data.name}>Ver en github</a>
-          </span>
+
           <div className="wrap-files">
             <h2>Listado de archivos</h2>
             <ul>
@@ -91,6 +89,12 @@ export default class Content extends React.Component {
               <div className="large-3 columns" key={index}>
                 <img className="gists_image" src={data.avatar_url}/>
                 <h1>{data.name}</h1>
+                <span className="wrap-github-link">
+                {
+                  data.ownerId ? <a href={"https://github.com/"+data.name}>Ver perfil de github</a>: ''
+
+                }
+                </span>
                 <p className="gists_description">{data.description}</p>
                 <span>Fecha de creacion: {data.created_at}</span>
                 <div>

@@ -19830,15 +19830,6 @@ var Content = function (_React$Component) {
           'div',
           { className: 'wrap-details' },
           _react2.default.createElement(
-            'span',
-            { className: 'wrap-github-link' },
-            _react2.default.createElement(
-              'a',
-              { href: "https://github.com/" + data.name },
-              'Ver en github'
-            )
-          ),
-          _react2.default.createElement(
             'div',
             { className: 'wrap-files' },
             _react2.default.createElement(
@@ -19897,6 +19888,15 @@ var Content = function (_React$Component) {
               'h1',
               null,
               data.name
+            ),
+            _react2.default.createElement(
+              'span',
+              { className: 'wrap-github-link' },
+              data.ownerId ? _react2.default.createElement(
+                'a',
+                { href: "https://github.com/" + data.name },
+                'Ver perfil de github'
+              ) : ''
             ),
             _react2.default.createElement(
               'p',
