@@ -1,0 +1,16 @@
+@import "../app.scss";
+@include foundation-visibility-classes;
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-menu;
+@include foundation-reveal;
+
+.Descripcion_Event{
+    border-color: #2196F3;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 141px;
+    min-height: 141px;
+    margin-top: 10px;
+    padding: 10px;
+}

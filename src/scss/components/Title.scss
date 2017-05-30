@@ -1,0 +1,75 @@
+@import '../settings';
+
+.title-container {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-family: $global-font-family-light;
+  font-weight: 100;
+  color: $primary;
+  margin:0px;
+}
+
+.lines {
+
+}
+
+.line-narrow {
+  .line-top,
+  .line-bottom {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+
+.line-left {
+  text-align: left !important;
+  margin:10px !important;
+  .line-top {
+    margin:0px;
+    margin-bottom: 5px;
+  }
+  .line-bottom {
+    margin:0px;
+    margin-top: 5px;
+  }
+}
+
+.line-right {
+  text-align: right !important;
+  margin:10px !important;
+  .line-top, .line-bottom {
+    margin:0px;
+    margin-left: calc(100% - 50px);
+  }
+  .line-top {
+    margin-bottom: 5px;
+  }
+  .line-bottom {
+    margin-top: 5px;
+  }
+}
+
+
+.line-top {
+  position: relative;
+  margin: 0px auto;
+  margin-bottom: 5px;
+  padding-bottom: 1px;
+  width: 50px;
+  border-bottom: 1px solid $primary;
+}
+
+.line-bottom {
+  position: relative;
+  margin: 0px auto;
+  margin-top: 5px;
+  padding-top: 1px;
+  width: 50px;
+  border-bottom: 1px solid $primary;
+}
+
